@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+    <!-- <script src="draft.js"></script> -->
+    <!-- <script src="sample.js"></script> -->
+    <title>BUY CRYPTO</title>
+    <header>
+        <div class="heading">
+            <h1 class="title">BUY CRYPTO</h1>
+        <!-- <nav>
+            <ul>
+                <li>Home</li>
+                <li>Buy Coin</li>
+                <li>Register / Login</li>
+                <li>Contact</li>
+                <li>About Us</li>
+            </ul>
+        </nav> -->
+        </div>
+    </header>
+    <hr>
+    
+    <main>        
+        <h2 class="welcome">Welcome! Get The Best Crypto Exchange Rates Here </h2>
+        <div class='forms'>
+            <div>
+                <form class="login">
+                    <h2>Welcome back, user!</h2>
+                    <label for="username">Username: <input type="text" class="username"></label>
+                    <label for="password">Password: <input type="password" maxlength="4" class="password"></label>
+                    <div class="submit">
+                        <button class="loginBtn">Log in!</button>
+                        <p>New user, click <span href="" class="newUser">here</span></p>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <form class="register hidden">
+                    <h2>Enter your details below!</h2>
+                    <label for="username">Username: <input type="text" class="user"></label>       
+                    <label for="password">Password: <input type="password" maxlength="4" class="pass"></label> 
+                    <label for="email">Email Address: <input type="email" class="email"></label> 
+                    <div class="submit">
+                        <button class="registerBtn">Sign up!</button>
+                        <p>Click <span class="oldUser">here</span> to login</p>
+                    </div>
+                </form>
+            </div>
+
+            
+        </div>
+        <div class="rates">
+            <div class="balance">ACCOUNT BALANCE 
+                <div>USD: <span class="usdSum"></span></div> 
+                <div>BITCOIN: <span class="btcSum"></span></div> 
+                <div>ETHERUEM: <span class="ethSum"></span></div> 
+                <button class="logout hidden">Log Out</button>
+            </div>
+            <!-- <h2>Our Crypto Rate!</h2>  -->
+            <div class="crypto">           
+                <div class="btc">
+                    <h3>BITCOIN (<span class="btcSlug">BTC</span>)</h3>
+                    <h4>USD: <span class="dollar">55006</span></h4>
+                    <h4>NAIRA: <span class="na1ra">34598006</span></h4>
+                    <p>% Change in 24 hrs: <span class="hours24">0.07</span></p>
+                    <p>% Change 1 month: <span class="month1">0.2</span></p>
+                    <p>Date: <span class="curDate">May 7, 2021</span></p>
+                    <button class="buyBTC">BUY BTC</button>
+                </div>
+
+                <div class="eth">
+                    <h3>ETHEREUM (<span class="ethSlug">ETH</span>)</h3>
+                    <h4>USD: <span class="dollar">3600</span></h4>
+                    <h4>NAIRA: <span class="na1ra">4598006</span></h4>
+                    <p>% Change in 24 hrs: <span class="hours24">0.1</span></p>
+                    <p>% Change 1 month: <span class="month1">0.38</span></p>
+                    <p>Date: <span class="curDate">May 7, 2021</span></p>
+                    <button class="buyETH">BUY ETH</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div>
+        
+        <form class="getCoin hidden">
+            <div class="close">X</div>
+            <h2>Fill the form below:</h2>
+            <label for="coin">Choose a coin:<select name="coinSelect" class="coinSelect">
+                <option value="btc">Bitcoin</option>
+                <option value="eth">Ethereum</option>
+            </select></label>
+            <label for="quantity">Quantity: <input type="number" class="quantity"></label>
+            <button type="submit" class="buyCrypto">Buy Now!</button>        
+        </form>
+    </div>
+    <div class="overlay hidden"></div>
+    <footer>
+        &copy; Crypto Haven <span class='currDate'></span>
+    </footer>
+</head>
+<body>
+    
+</body>
+</html>
